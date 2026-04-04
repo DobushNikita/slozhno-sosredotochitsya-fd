@@ -12,6 +12,7 @@
   --links-color: #f1b2ce;
   --button-hover: rgba(255, 0, 112, 0.4);
   --font-famaly-text: 'IBM Plex mono', sans-serif;
+  --border: #ff0070;
 }
 
 .page {
@@ -115,6 +116,21 @@
   border: none;
   width: 70px;
   height: 26px;
+  padding: 1 15px;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--border, rgb(255, 0, 112, 0,4));
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--border, #ff0070);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color, #ff0070)
 }
 
 .header-title {
@@ -179,4 +195,79 @@
   color: var(--links-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
+}
+
+.title__paragraph-decor {
+  font-weight: 400;
+}
+
+.one-title-block {
+  margin-top: 10px;
+}
+
+.section__content-gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery__item {
+  display: grid;
+  gap: 10px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.content__picture {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  inline-size: 100%;
+  max-block-size: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+.footer::before {
+  content: "";
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: var(--accent-color);
+}
+
+.footer::after {
+  content: "";
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: var(--accent-color);
+}
+
+.footer-title {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--heading-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  line-height: 0.83;
 }
