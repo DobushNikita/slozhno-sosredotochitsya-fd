@@ -5,8 +5,48 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --subtitle-color: #000028;
+  --accent-color: #ff0070;
+  --heading-color: #db00ff;
+  --button-color: #ff0070;
+  --info-color: #f1b2ce;
+  --links-color: #f1b2ce;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --border: #ff0070;
+  --decor-color: #ff0070;
+  --title-color: #ff0070;
+}
+
+.header__decoration-dark {
+  position: absolute;
+  display: flex;
+  justify-self: end;
+  color: var(--accent-color);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  line-height: 25px;
+  font-size: 18px;
+  margin-block-start: 10px;
+  margin-inline-end: 10px;
+}
+
+.header__decoration-dark::after {
+  display: inline-block;
+  content: "";
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  margin-inline: 10px;
+  margin-block: 8px;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .header__decoration-dark {
+    margin-block-start: 20px;
+    margin-inline-end: 20px;
+  }
 }
