@@ -135,6 +135,11 @@
   gap: 10px;
 }
 
+.what__section-block {
+    display: grid;
+    gap: 20px;
+  }
+
 .section__title {
   color: var(--title-color);
   font-family: var(--font-famaly-text, sans-serif);
@@ -295,6 +300,7 @@
 
   .why__section-card {
     grid-column: 2 / 4;
+    margin-inline-start: 7px;
   }
 
   .what__section-title {
