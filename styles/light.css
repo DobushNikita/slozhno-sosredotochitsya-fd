@@ -4,7 +4,7 @@
   переключая тему
 */
 
-.header__decoration-dark {
+ .theme-light .header__decoration-dark {
     display: none;
   }
 
