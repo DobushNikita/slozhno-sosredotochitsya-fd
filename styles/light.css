@@ -4,11 +4,7 @@
   переключая тему
 */
 
- .theme-light .theme-auto .header__decoration-dark {
-    display: none;
-  }
-
-  .theme-light .header__decoration-dark::after {
+ .theme-light .header__decoration-dark {
     display: none;
   }
 
