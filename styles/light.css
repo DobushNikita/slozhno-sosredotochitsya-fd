@@ -14,7 +14,6 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png);
-  --bg-color: ;
   --accent-color: #FF8DCB;
   --heading-color: #FFC2E6;
   --button-color: #353430;
@@ -27,7 +26,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-
   :root {
   --bg-image: url(../images/cover-image-light.png);
   --accent-color: #FF8DCB;
@@ -40,6 +38,4 @@
   --title-color: #353430;
   --subtitle-color: #353430;
   }
-
-  
 }
