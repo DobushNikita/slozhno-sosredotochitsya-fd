@@ -101,7 +101,7 @@
   border: none;
   width: 70px;
   height: 26px;
-  padding: 1 15px;
+  padding: 1px 15px;
 }
 
 .header__theme-menu-button:hover {
@@ -323,9 +323,9 @@
   .one__title-paragraph {
     grid-row: 1 / 3;
   }
-  
+
   .one__subtitle-paragraph {
-    height: 23px;
+    height: auto;
   }
 
   .gallery {
@@ -383,10 +383,6 @@
   .content__text-block {
     align-items: start;
     grid-template-rows: min-content;
-  }
-
-  .content__text-block-why {
-    width: 649px;
   }
 
   .gallery {
